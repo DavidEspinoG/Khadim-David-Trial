@@ -11,9 +11,27 @@
     <h1 id="title">Title</h1>
     <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laudantium quaerat ipsa quidem dolores fugit enim saepe blanditiis id deleniti odit tempora corporis consequuntur libero nobis incidunt, ut neque nisi!</p>
     <form action="" id="survey-form">
-      <input type="text" id="name" required>
-      <input type="email" id="email" required>
+      <label for="name" id="name-label">
+        <input type="text" placeholder="Your Name..." id="name" required>
+      </label>
+      <label for="email" id="email-lable">
+        <input type="email" placeholder="Your email..." id="email" required>
 
+      </label>
+      <label for="number">
+        <input type="number" id="number" placeholder="Your Number..." min="0" max="100">
+      </label>
+        <select>
+          <option value="First Class"> First Class</option>
+          <option value="Seconde Class"> Second Class</option>
+          <option value="Second Class"> Second Class</option>
+       
+        </select>
+        <input type="checkbox" name="gender" value="Male">
+        <input type="checkbox" name="gender" value="Female">
+
+        <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+          <button id="submit">Submit</button>
     </form>
     <!--
      
